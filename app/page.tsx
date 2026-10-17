@@ -11,6 +11,16 @@ const programme = [
   { time: '17:30', title: 'Future / Forward', text: 'An evening of stories, music, and shared imagination.' },
 ]
 
+const team = [
+  { name: 'Laker Leslie Jordan', role: 'Founder', image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/267043957-RkUYX5hNHcUIwmV1Gu2pp4BjdG1JhS.jpg', featured: true },
+  { name: 'Otono Steven', role: 'Head Of DTP' },
+  { name: 'Okello Matthew', role: 'Head Of Design Team' },
+  { name: 'Kimuil Jonathan', role: 'Human Resource' },
+  { name: 'Kirabo Creamlyn', role: 'Head Of Marketing' },
+  { name: 'Messiku Joan', role: 'Head Of Development and Brainstorming' },
+  { name: 'Madolo Jeff', role: 'Founder, RychTech Bio' },
+]
+
 function Arrow() {
   return <span aria-hidden="true" className="arrow">↗</span>
 }
@@ -62,7 +72,22 @@ export default function Page() {
         <div className="programme-list">{programme.map((item) => <div className="programme-row" key={item.time}><span className="time">{item.time}</span><h3>{item.title}</h3><p>{item.text}</p><Arrow /></div>)}</div>
       </section>
 
-      <section className="connect" id="connect"><p className="eyebrow">04 / JOIN THE MOVEMENT</p><h2>There&apos;s room<br />for your <em>idea.</em></h2><a className="primary-cta light" href="mailto:hello@aerion.ug">Start a conversation <Arrow /></a><div className="connect-meta"><span>Kampala / Uganda</span><span>hello@aerion.ug</span><span>© 2026 AERION FOUNDATION</span></div></section>
+      <section className="team-section" id="team">
+        <div className="team-heading">
+          <div><p className="eyebrow">04 / THE PEOPLE MAKING IT REAL</p><h2>Meet the team<br /><em>behind the scenes.</em></h2></div>
+          <p className="team-intro">A restless, multidisciplinary group building kinder systems and more expressive digital experiences from Uganda.</p>
+        </div>
+        <div className="team-grid">
+          {team.map((member, index) => (
+            <article className={`team-card${member.featured ? ' team-card-featured' : ''}`} key={member.name}>
+              <div className="team-image-wrap"><img src={member.featured ? member.image : '/team-placeholder.png'} alt={`${member.name}, ${member.role}`} /></div>
+              <div className="team-card-meta"><span className="team-index">0{index + 1}</span><div><h3>{member.name}</h3><p>{member.role}</p></div></div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="connect" id="connect"><p className="eyebrow">05 / JOIN THE MOVEMENT</p><h2>There&apos;s room<br />for your <em>idea.</em></h2><a className="primary-cta light" href="mailto:hello@aerion.ug">Start a conversation <Arrow /></a><div className="connect-meta"><span>Kampala / Uganda</span><span>hello@aerion.ug</span><span>© 2026 AERION FOUNDATION</span></div></section>
 
       <footer><a className="wordmark" href="#top"><span>A</span>ERION<span className="dot">.</span></a><p>Designed for a more human future.</p><a href="#top">Back to top ↑</a></footer>
     </main>
