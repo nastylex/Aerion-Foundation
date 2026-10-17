@@ -40,7 +40,7 @@ export default function Page() {
         </div>
         <div className="hero-art" aria-label="Abstract illustration representing connected ideas" role="img">
           <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" />
-          <div className="sun">A<span>/</span>F</div>
+          <div className="sun" aria-hidden="true" />
           <span className="star star-one">✦</span><span className="star star-two">✳</span><span className="star star-three">+</span>
           <p className="art-label">THE FUTURE<br />IS A SHARED<br /><b>PROJECT</b></p>
         </div>
