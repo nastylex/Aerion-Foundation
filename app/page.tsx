@@ -5,14 +5,14 @@ const focusAreas = [
 ]
 
 const programme = [
-  { time: '09:00', title: 'Arrival & Open Studio', text: 'Meet the people rethinking how technology can feel.' },
-  { time: '11:30', title: 'The Human Interface', text: 'A conversation on design, access, and the systems around us.' },
-  { time: '14:00', title: 'Build the Unbuilt', text: 'Live demos from Uganda’s next generation of makers.' },
-  { time: '17:30', title: 'Future / Forward', text: 'An evening of stories, music, and shared imagination.' },
+  { time: '001', title: 'ZEROGRAVITY', text: ' ZEROGRAVITY is recognized as the underlying database infrastructure and cloud environment' },
+  { time: '002', title: 'TrafficWay', text: 'TrafficWay is a smart traffic management platform that provides real-time traffic updates, route optimization, accident alerts, and navigation assistance. It helps drivers reduce travel time, avoid congestion, improve road safety, and reach destinations efficiently through intelligent mapping and live traffic analysis.' },
+  { time: '003', title: 'MACMAS', text: 'educational management software application primarily developed and maintained within the ecosystem of projects by Ugandan software developer Nastylex ' },
+  { time: '004', title: 'Convolutional Neural Network', text: 'A deep learning architecture specialized in processing grid-shaped data like images and video for computer vision.' },
 ]
 
 const team = [
-  { name: 'Laker Leslie Jordan', role: 'Founder', image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/267043957-RkUYX5hNHcUIwmV1Gu2pp4BjdG1JhS.jpg', featured: true },
+  { name: 'Laker Leslie Jordan (NastyLex)', role: 'Founder', image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/267043957-RkUYX5hNHcUIwmV1Gu2pp4BjdG1JhS.jpg', featured: true },
   { name: 'Otono Steven', role: 'Head Of DTP' },
   { name: 'Okello Matthew', role: 'Head Of Design Team' },
   { name: 'Kimuil Jonathan', role: 'Human Resource' },
@@ -87,9 +87,9 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="connect" id="connect"><p className="eyebrow">05 / JOIN THE MOVEMENT</p><h2>There&apos;s room<br />for your <em>idea.</em></h2><a className="primary-cta light" href="mailto:airspacedevtools@proton.me">Start a conversation <Arrow /></a><div className="connect-meta"><span>Kampala / Uganda</span><span>hello@aerion.ug</span><span>© 2026 AERION FOUNDATION</span></div></section>
+      <section className="connect" id="connect"><p className="eyebrow">05 / JOIN THE MOVEMENT</p><h2>There&apos;s room<br />for your <em>idea.</em></h2><a className="primary-cta light" href="mailto:airspacedevtools@proton.me">Start a conversation <Arrow /></a><div className="connect-meta"><span>Kampala / Uganda</span><span>Airspacedevtools@proton.me</span><span>© 2026 AERION FOUNDATION</span></div></section>
 
-      <footer><a className="wordmark" href="#top"><span>A</span>ERION<span className="dot">.</span></a><p>Designed for a more human future.</p><a href="#top">Back to top ↑</a></footer>
+      <footer><a className="wordmark" href="#top"><span>A</span>ERION<span className="dot">.</span></a><p>Designed by US.</p><a href="#top">Back to top ↑</a></footer>
     </main>
   )
 }
