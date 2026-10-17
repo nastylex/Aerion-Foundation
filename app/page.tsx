@@ -30,6 +30,9 @@ export default function Page() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
+          <div className="live-word" aria-label="AERION">
+            {'AERION'.split('').map((letter, index) => <span key={`${letter}-${index}`} style={{ '--letter-index': index } as React.CSSProperties}>{letter}</span>)}
+          </div>
           <p className="eyebrow">AERION FOUNDATION / UGANDA</p>
           <h1>Technology,<br /><em>reimagined.</em></h1>
           <p className="hero-intro">We are building a future where digital experiences are more human, more inclusive, and made for the world we actually live in.</p>
