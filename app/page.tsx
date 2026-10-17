@@ -48,8 +48,10 @@ export default function Page() {
           <p className="hero-intro">We are building a future where digital experiences are more human, more inclusive, and made for the world we actually live in.</p>
           <a className="primary-cta" href="#why">Explore the vision <Arrow /></a>
         </div>
-        <div className="hero-art" aria-label="Abstract illustration representing connected ideas" role="img">
-          <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" />
+        <div className="hero-art" aria-label="Animated solar system illustration representing connected ideas" role="img">
+          <div className="orbit orbit-one"><div className="orbit-run"><span className="planet" style={{ '--planet-size': '16px', '--planet-color': 'var(--lime)', '--orbit-speed': '12s' } as React.CSSProperties} /></div></div>
+          <div className="orbit orbit-two"><div className="orbit-run"><span className="planet" style={{ '--planet-size': '10px', '--planet-color': 'var(--orange)', '--orbit-speed': '8s' } as React.CSSProperties} /></div></div>
+          <div className="orbit orbit-three"><div className="orbit-run"><span className="planet" style={{ '--planet-size': '22px', '--planet-color': 'var(--ink)', '--orbit-speed': '24s' } as React.CSSProperties} /></div></div>
           <div className="sun" aria-hidden="true" />
           <span className="star star-one">✦</span><span className="star star-two">✳</span><span className="star star-three">+</span>
           <p className="art-label">THE FUTURE<br />IS A SHARED<br /><b>PROJECT</b></p>
