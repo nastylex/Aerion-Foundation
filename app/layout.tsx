@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'AERION Foundation | Technology, reimagined.',
+  description: 'AERION Foundation Uganda is building more human, inclusive digital experiences for the future of technology.',
   generator: 'v0.app',
   icons: {
     icon: [
