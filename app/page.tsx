@@ -68,7 +68,7 @@ export default function Page() {
       </section>
 
       <section className="programme" id="programme">
-        <div className="programme-head"><div><p className="eyebrow">03 / A DAY OF POSSIBILITY</p><h2>Come curious.<br /><em>Leave changed.</em></h2></div><p className="programme-note">AERION / 2026<br />KAMPALA, UGANDA</p></div>
+        <div className="programme-head"><div><p className="eyebrow">03 / A DAY OF POSSIBILITY</p><h2>Curious.<br /><em>See Our Projects.</em></h2></div><p className="programme-note">AERION / 2026<br />KAMPALA, UGANDA</p></div>
         <div className="programme-list">{programme.map((item) => <div className="programme-row" key={item.time}><span className="time">{item.time}</span><h3>{item.title}</h3><p>{item.text}</p><Arrow /></div>)}</div>
       </section>
 
@@ -87,7 +87,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="connect" id="connect"><p className="eyebrow">05 / JOIN THE MOVEMENT</p><h2>There&apos;s room<br />for your <em>idea.</em></h2><a className="primary-cta light" href="mailto:hello@aerion.ug">Start a conversation <Arrow /></a><div className="connect-meta"><span>Kampala / Uganda</span><span>hello@aerion.ug</span><span>© 2026 AERION FOUNDATION</span></div></section>
+      <section className="connect" id="connect"><p className="eyebrow">05 / JOIN THE MOVEMENT</p><h2>There&apos;s room<br />for your <em>idea.</em></h2><a className="primary-cta light" href="mailto:airspacedevtools@proton.me">Start a conversation <Arrow /></a><div className="connect-meta"><span>Kampala / Uganda</span><span>hello@aerion.ug</span><span>© 2026 AERION FOUNDATION</span></div></section>
 
       <footer><a className="wordmark" href="#top"><span>A</span>ERION<span className="dot">.</span></a><p>Designed for a more human future.</p><a href="#top">Back to top ↑</a></footer>
     </main>
