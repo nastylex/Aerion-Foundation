@@ -61,8 +61,15 @@ nav a:hover::after { transform: scaleX(1); }
 .team-card:hover .team-card-meta { border-color: var(--orange); }
 .team-card:hover h3 { color: var(--lime); }
 .statement { background: var(--deep); color: var(--ink); padding: 100px 10vw; }.statement .eyebrow, .programme .eyebrow { color: #a5a39d; }.statement-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 12vw; align-items: end; }.statement h2, .section-heading h2, .programme h2, .connect h2 { margin: 0; font-size: clamp(44px, 6vw, 86px); line-height: .92; letter-spacing: -.08em; }.statement h2 em, .programme h2 em { color: var(--lime); }.statement-grid p { color: #aaa8a0; line-height: 1.55; max-width: 280px; font-size: 14px; }
-.focus-section { padding: 110px 10vw; }.section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 75px; }.section-heading h2 { font-size: clamp(52px, 7vw, 100px); }.section-heading h2 em { color: var(--orange); }.focus-list { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); gap: 0; }
-.focus-card { min-height: 330px; padding: 25px 30px 25px 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; margin: 0; }
+.focus-section { padding: 110px 0 110px 0; margin: 0; width: 100%; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 75px; padding: 0 5vw; }
+.section-heading h2 { font-size: clamp(52px, 7vw, 100px); }
+.section-heading h2 em { color: var(--orange); }
+.focus-list-wrap { width: 100%; margin: 0; padding: 0; }
+.focus-list { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); gap: 0; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; }
+.focus-card { min-height: 330px; padding: 25px 30px 25px 30px; border-right: 1px solid var(--line); position: relative; margin: 0; width: 100%; box-sizing: border-box; }
+.focus-card:first-child { padding-left: 5vw; }
+.focus-card:last-child { padding-right: 5vw; border-right: 0; }
 .focus-card:not(:first-child) { padding-left: 30px; }
 .focus-card:last-child { border-right: 0; }
 .focus-card > span { font-size: 11px; color: var(--orange); transition: color .3s ease; }
@@ -80,4 +87,4 @@ nav a:hover::after { transform: scaleX(1); }
 @media (prefers-reduced-motion: reduce) { .orbit-run, .sun, .sun::before, .star, .hero-art:hover .sun { animation: none; } .hero-art, .hero-art * { transition: none; } }
 @keyframes caret-blink { 0%, 45% { opacity: 1; } 46%, 100% { opacity: 0; } }
 footer { padding: 30px 5vw; display: flex; justify-content: space-between; align-items: center; font-size: 11px; }.footer p { color: var(--muted); }
-@media (max-width: 700px) { nav { display: none; }.topbar { padding: 0 6vw; }.hero { min-height: 720px; padding: 90px 8vw; align-items: flex-start; }.hero-copy { width: 100%; }.hero-art { opacity: .55; width: 100vw; right: -28vw; top: 43%; height: 50%; }.hero h1 { font-size: 72px; }.statement, .focus-section, .programme, .connect { padding: 75px 8vw; }.statement-grid, .focus-list { grid-template-columns: 1fr; }.statement-grid { gap: 30px; }.section-heading, .programme-head { display: block; margin-bottom: 45px; }.focus-card, .focus-card:not(:first-child) { min-height: 240px; padding: 25px 0; border-right: 0; border-bottom: 1px solid var(--line); }.focus-card h3 { margin-top: 35px; }.programme-row { grid-template-columns: .5fr 1.5fr .2fr; gap: 10px; }.programme-row p { display: none; }.connect-meta { display: grid; gap: 12px; margin-top: 100px; }footer { display: grid; gap: 18px; } }
+@media (max-width: 700px) { nav { display: none; }.topbar { padding: 0 6vw; }.hero { min-height: 720px; padding: 90px 8vw; align-items: flex-start; }.hero-copy { width: 100%; }.hero-art { opacity: .55; width: 100vw; right: -28vw; top: 43%; height: 50%; }.hero h1 { font-size: 72px; }.statement, .focus-section, .programme, .connect { padding: 75px 8vw; }.statement-grid { grid-template-columns: 1fr; }.statement-grid { gap: 30px; }.section-heading, .programme-head { display: block; margin-bottom: 45px; }.focus-list { grid-template-columns: 1fr; width: 100%; left: 0; right: 0; margin-left: 0; margin-right: 0; }.focus-card, .focus-card:not(:first-child) { min-height: 240px; padding: 25px 8vw; border-right: 0; border-bottom: 1px solid var(--line); }.focus-card:first-child { padding-left: 8vw; }.focus-card:last-child { padding-right: 8vw; }.focus-card h3 { margin-top: 35px; }.programme-row { grid-template-columns: .5fr 1.5fr .2fr; gap: 10px; }.programme-row p { display: none; }.connect-meta { display: grid; gap: 12px; margin-top: 100px; }footer { display: grid; gap: 18px; } }
