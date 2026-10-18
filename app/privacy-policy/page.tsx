@@ -1,4 +1,5 @@
 import { Arrow } from '../page'
+import ThemeToggle from '@/components/theme-toggle'
 
 export default function PrivacyPolicy() {
   return (
@@ -12,9 +13,12 @@ export default function PrivacyPolicy() {
           <a href="/#why">Why Aerion</a>
           <a href="/#programme">Programme</a>
         </nav>
-        <a className="header-cta" href="/#connect">
-          Connect <Arrow />
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <ThemeToggle />
+          <a className="header-cta" href="/#connect">
+            Connect <Arrow />
+          </a>
+        </div>
       </header>
 
       <section className="privacy-page">

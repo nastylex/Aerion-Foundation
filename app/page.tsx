@@ -21,6 +21,8 @@ const team = [
   { name: 'Madolo Jeff', role: 'Founder, RychTech Bio' },
 ]
 
+import ThemeToggle from '@/components/theme-toggle'
+
 export function Arrow() {
   return <span aria-hidden="true" className="arrow">↗</span>
 }
@@ -35,7 +37,10 @@ export default function Page() {
           <a href="#programme">Programme</a>
           <a href="#about">About us</a>
         </nav>
-        <a className="header-cta" href="#connect">Connect <Arrow /></a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <ThemeToggle />
+          <a className="header-cta" href="#connect">Connect <Arrow /></a>
+        </div>
       </header>
 
       <section className="hero" id="top">
