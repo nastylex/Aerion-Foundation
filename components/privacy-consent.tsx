@@ -1,24 +1,31 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function PrivacyConsent() {
   const [showConsent, setShowConsent] = useState(false)
   const [hasAgreed, setHasAgreed] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
+    // Don't show popup on privacy policy page
+    if (pathname === '/privacy-policy') {
+      return
+    }
+    
     const consent = localStorage.getItem('aerion-privacy-consent')
     if (!consent) {
       setShowConsent(true)
     }
-  }, [])
+  }, [pathname])
 
   const handleAgree = () => {
     localStorage.setItem('aerion-privacy-consent', 'agreed')
     setShowConsent(false)
   }
 
-  if (!showConsent) {
+  if (!showConsent || pathname === '/privacy-policy') {
     return null
   }
 
