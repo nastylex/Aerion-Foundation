@@ -98,8 +98,8 @@ export default function Page() {
       <footer>
         <a className="wordmark" href="#top"><span>A</span>ERION<span className="dot">.</span></a>
         <p>Building the future.</p>
+         <a href="#top">Back to top ↑</a>
         <ThemeToggle />
-        <a href="#top">Back to top ↑</a>
       </footer>
     </main>
   )
