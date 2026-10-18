@@ -1,6 +1,6 @@
-import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import PrivacyConsent from '@/components/privacy-consent'
 
 export const metadata: Metadata = {
   title: 'AERION Foundation Uganda.',
@@ -32,8 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <PrivacyConsent />
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )

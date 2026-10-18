@@ -21,7 +21,7 @@ const team = [
   { name: 'Madolo Jeff', role: 'Founder, RychTech Bio' },
 ]
 
-function Arrow() {
+export function Arrow() {
   return <span aria-hidden="true" className="arrow">↗</span>
 }
 
