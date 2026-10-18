@@ -66,9 +66,7 @@ export default function Page() {
 
       <section className="focus-section">
         <div className="section-heading"><p className="eyebrow">02 / WHAT WE&apos;RE EXPLORING</p><h2>Big questions.<br /><em>Practical optimism.</em></h2></div>
-        <div className="focus-list-wrap">
-          <div className="focus-list">{focusAreas.map((area) => <article className="focus-card" key={area.number} data-area={area.number}><span>{area.number}</span><h3>{area.title}</h3><p>{area.text}</p><a href="#connect" aria-label={`Learn more about ${area.title}`}><Arrow /></a></article>)}</div>
-        </div>
+        <div className="focus-list">{focusAreas.map((area) => <article className="focus-card" key={area.number}><span>{area.number}</span><h3>{area.title}</h3><p>{area.text}</p><a href="#connect" aria-label={`Learn more about ${area.title}`}><Arrow /></a></article>)}</div>
       </section>
 
       <section className="programme" id="programme">
