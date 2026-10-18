@@ -245,7 +245,11 @@ nav a:hover::after { transform: scaleX(1); }
   }
 }
 
-footer { padding: 30px 5vw; display: flex; justify-content: space-between; align-items: center; font-size: 11px; }.footer p { color: var(--muted); }
+footer { padding: 30px 5vw; display: flex; justify-content: space-between; align-items: center; gap: 24px; font-size: 11px; }.footer p { color: var(--muted); }
+footer .switch-button { margin: 0; height: 44px; }
+footer .switch-button .switch-outer { width: 92px; }
+footer .switch-button .switch-outer .button-toggle { height: 32px; width: 32px; }
+footer .switch-button .switch-outer .button-indicator { height: 20px; width: 20px; }
 .privacy-page { padding: 80px 10vw 120px; }
 .privacy-content { max-width: 900px; margin: 0 auto; }
 .privacy-header { margin-bottom: 60px; }
@@ -281,4 +285,4 @@ footer { padding: 30px 5vw; display: flex; justify-content: space-between; align
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slide-up { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
 
-@media (max-width: 700px) { nav { display: none; }.topbar { padding: 0 6vw; }.hero { min-height: 720px; padding: 90px 8vw; align-items: flex-start; }.hero-copy { width: 100%; }.hero-art { opacity: .55; width: 100vw; right: -28vw; top: 43%; height: 50%; }.hero h1 { font-size: 72px; }.statement, .focus-section, .programme, .connect { padding: 75px 8vw; }.statement-grid { grid-template-columns: 1fr; }.statement-grid { gap: 30px; }.section-heading, .programme-head { display: block; margin-bottom: 45px; }.focus-list { grid-template-columns: 1fr; width: 100%; left: 0; right: 0; margin-left: 0; margin-right: 0; }.focus-card, .focus-card:not(:first-child) { min-height: 240px; padding: 25px 8vw; border-right: 0; border-bottom: 1px solid var(--line); }.focus-card:first-child { padding-left: 8vw; }.focus-card:last-child { padding-right: 8vw; }.focus-card h3 { margin-top: 35px; }.programme-row { grid-template-columns: .5fr 1.5fr .2fr; gap: 10px; }.programme-row p { display: none; }.connect-meta { display: grid; gap: 12px; margin-top: 100px; }footer { display: grid; gap: 18px; } .privacy-page { padding: 60px 6vw 80px; } .privacy-modal { max-height: 95vh; } .privacy-modal-header, .privacy-modal-body, .privacy-modal-footer { padding: 24px; } }
+@media (max-width: 700px) { nav { display: none; }.topbar { padding: 0 6vw; }.hero { min-height: 720px; padding: 90px 8vw; align-items: flex-start; }.hero-copy { width: 100%; }.hero-art { opacity: .55; width: 100vw; right: -28vw; top: 43%; height: 50%; }.hero h1 { font-size: 72px; }.statement, .focus-section, .programme, .connect { padding: 75px 8vw; }.statement-grid { grid-template-columns: 1fr; }.statement-grid { gap: 30px; }.section-heading, .programme-head { display: block; margin-bottom: 45px; }.focus-list { grid-template-columns: 1fr; width: 100%; left: 0; right: 0; margin-left: 0; margin-right: 0; }.focus-card, .focus-card:not(:first-child) { min-height: 240px; padding: 25px 8vw; border-right: 0; border-bottom: 1px solid var(--line); }.focus-card:first-child { padding-left: 8vw; }.focus-card:last-child { padding-right: 8vw; }.focus-card h3 { margin-top: 35px; }.programme-row { grid-template-columns: .5fr 1.5fr .2fr; gap: 10px; }.programme-row p { display: none; }.connect-meta { display: grid; gap: 12px; margin-top: 100px; }footer { display: grid; gap: 18px; justify-items: start; } footer .switch-button { margin: 0; } .privacy-page { padding: 60px 6vw 80px; } .privacy-modal { max-height: 95vh; } .privacy-modal-header, .privacy-modal-body, .privacy-modal-footer { padding: 24px; } }

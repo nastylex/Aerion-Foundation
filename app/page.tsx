@@ -37,10 +37,7 @@ export default function Page() {
           <a href="#programme">Programme</a>
           <a href="#about">About us</a>
         </nav>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <ThemeToggle />
-          <a className="header-cta" href="#connect">Connect <Arrow /></a>
-        </div>
+        <a className="header-cta" href="#connect">Connect <Arrow /></a>
       </header>
 
       <section className="hero" id="top">
@@ -96,7 +93,12 @@ export default function Page() {
 
       <section className="connect" id="connect"><p className="eyebrow">05 / JOIN THE MOVEMENT</p><h2>There&apos;s room<br />for your <em>idea.</em></h2><a className="primary-cta light" href="mailto:airspacedevtools@proton.me">Start a conversation <Arrow /></a><div className="connect-meta"><span>Kampala / Uganda</span><span>Airspacedevtools@proton.me</span><span>© 2026 AERION FOUNDATION</span></div></section>
 
-      <footer><a className="wordmark" href="#top"><span>A</span>ERION<span className="dot">.</span></a><p>Building the future.</p><a href="#top">Back to top ↑</a></footer>
+      <footer>
+        <a className="wordmark" href="#top"><span>A</span>ERION<span className="dot">.</span></a>
+        <p>Building the future.</p>
+        <ThemeToggle />
+        <a href="#top">Back to top ↑</a>
+      </footer>
     </main>
   )
 }

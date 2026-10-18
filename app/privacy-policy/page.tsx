@@ -13,12 +13,9 @@ export default function PrivacyPolicy() {
           <a href="/#why">Why Aerion</a>
           <a href="/#programme">Programme</a>
         </nav>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <ThemeToggle />
-          <a className="header-cta" href="/#connect">
-            Connect <Arrow />
-          </a>
-        </div>
+        <a className="header-cta" href="/#connect">
+          Connect <Arrow />
+        </a>
       </header>
 
       <section className="privacy-page">
@@ -248,6 +245,7 @@ export default function PrivacyPolicy() {
           <span>A</span>ERION<span className="dot">.</span>
         </a>
         <p>Building the future.</p>
+        <ThemeToggle />
         <a href="#top">Back to top ↑</a>
       </footer>
     </main>
