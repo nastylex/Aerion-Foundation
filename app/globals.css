@@ -46,10 +46,14 @@ nav a::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px;
 nav a:hover::after { transform: scaleX(1); }
 .primary-cta .arrow, .header-cta .arrow, .focus-card a, .programme-row .arrow, .team-card h3 { transition: transform .35s cubic-bezier(.2, .8, .2, 1), color .3s ease; }
 .primary-cta:hover .arrow, .header-cta:hover .arrow { transform: translate(4px, -4px); }
-.focus-card { transition: background .4s ease; }
-.focus-card:hover { background: rgba(242, 239, 232, .03); }
-.focus-card:hover a { transform: translate(5px, -5px); }
-.focus-card:hover h3 { color: var(--lime); }
+.focus-card { transition: all .45s cubic-bezier(.2, .8, .2, 1); border: 1px solid transparent; position: relative; overflow: hidden; }
+.focus-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 0%, rgba(215, 255, 63, .15), transparent 70%); opacity: 0; transition: opacity .45s ease; pointer-events: none; }
+.focus-card:hover { background: rgba(215, 255, 63, .08); border-color: rgba(215, 255, 63, .4); transform: translateY(-6px); box-shadow: 0 30px 60px -20px rgba(215, 255, 63, .35); }
+.focus-card:hover::before { opacity: 1; }
+.focus-card:hover a { transform: translate(6px, -6px); color: var(--lime); }
+.focus-card:hover h3 { color: var(--lime); text-shadow: 0 0 30px rgba(215, 255, 63, .25); }
+.focus-card:hover > span { color: var(--lime); }
+.focus-card:hover p { color: rgba(242, 239, 232, .98); }
 .programme-row { transition: background .35s ease; }
 .programme-row:hover { background: rgba(22, 22, 22, .07); }
 .programme-row:hover .arrow { transform: translate(8px, -8px); }
@@ -57,7 +61,15 @@ nav a:hover::after { transform: scaleX(1); }
 .team-card:hover .team-card-meta { border-color: var(--orange); }
 .team-card:hover h3 { color: var(--lime); }
 .statement { background: var(--deep); color: var(--ink); padding: 100px 10vw; }.statement .eyebrow, .programme .eyebrow { color: #a5a39d; }.statement-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 12vw; align-items: end; }.statement h2, .section-heading h2, .programme h2, .connect h2 { margin: 0; font-size: clamp(44px, 6vw, 86px); line-height: .92; letter-spacing: -.08em; }.statement h2 em, .programme h2 em { color: var(--lime); }.statement-grid p { color: #aaa8a0; line-height: 1.55; max-width: 280px; font-size: 14px; }
-.focus-section { padding: 110px 10vw; }.section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 75px; }.section-heading h2 { font-size: clamp(52px, 7vw, 100px); }.section-heading h2 em { color: var(--orange); }.focus-list { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }.focus-card { min-height: 330px; padding: 25px 30px 25px 0; border-right: 1px solid var(--line); position: relative; }.focus-card:not(:first-child) { padding-left: 30px; }.focus-card:last-child { border-right: 0; }.focus-card > span { font-size: 11px; color: var(--orange); }.focus-card h3 { font-size: 25px; letter-spacing: -.06em; max-width: 180px; margin: 65px 0 20px; }.focus-card p { font-size: 13px; color: var(--muted); line-height: 1.5; max-width: 230px; }.focus-card a { position: absolute; bottom: 22px; right: 25px; font-size: 30px; }.focus-card a:hover { color: var(--orange); }
+.focus-section { padding: 110px 10vw; }.section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 75px; }.section-heading h2 { font-size: clamp(52px, 7vw, 100px); }.section-heading h2 em { color: var(--orange); }.focus-list { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); gap: 0; }
+.focus-card { min-height: 330px; padding: 25px 30px 25px 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; margin: 0; }
+.focus-card:not(:first-child) { padding-left: 30px; }
+.focus-card:last-child { border-right: 0; }
+.focus-card > span { font-size: 11px; color: var(--orange); transition: color .3s ease; }
+.focus-card h3 { font-size: 25px; letter-spacing: -.06em; max-width: 180px; margin: 65px 0 20px; transition: color .3s ease; }
+.focus-card p { font-size: 13px; color: var(--muted); line-height: 1.5; max-width: 230px; transition: color .3s ease; }
+.focus-card a { position: absolute; bottom: 22px; right: 25px; font-size: 30px; transition: all .35s cubic-bezier(.2, .8, .2, 1); }
+.focus-card a:hover { color: var(--orange); }
 .programme { background: var(--orange); color: var(--panel-ink); padding: 105px 10vw; }.programme-head { display: flex; justify-content: space-between; margin-bottom: 80px; }.programme-note { font-size: 10px; letter-spacing: .12em; text-align: right; line-height: 1.6; }.programme-list { border-top: 1px solid rgba(22,22,22,.35); }.programme-row { display: grid; grid-template-columns: .5fr 1.2fr 1.7fr .2fr; gap: 20px; align-items: center; min-height: 95px; border-bottom: 1px solid rgba(22,22,22,.35); }.programme-row h3 { font-size: 21px; letter-spacing: -.05em; }.programme-row p { font-size: 13px; }.programme-row .arrow { justify-self: end; }
 .team-section { background: var(--deep); padding: 110px 10vw 125px; }.team-heading { display: flex; justify-content: space-between; align-items: end; gap: 8vw; margin-bottom: 70px; }.team-heading h2 { margin: 0; font-size: clamp(48px, 7vw, 100px); line-height: .9; letter-spacing: -.08em; }.team-heading h2 em { color: var(--orange); }.team-intro { max-width: 260px; color: var(--muted); font-size: 14px; line-height: 1.5; margin: 0 0 4px; }.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px 18px; }.team-card { min-width: 0; }.team-image-wrap { aspect-ratio: 1 / 1.15; overflow: hidden; background: var(--ink); }.team-image-wrap img { width: 100%; height: 100%; display: block; object-fit: cover; filter: saturate(.85); transition: transform .45s ease, filter .45s ease; }.team-card:hover img { transform: scale(1.04); filter: saturate(1); }.team-card-featured .team-image-wrap { background: var(--orange); }.team-card-meta { display: grid; grid-template-columns: 30px 1fr; gap: 8px; padding-top: 14px; border-top: 1px solid var(--line); margin-top: 10px; }.team-index { color: var(--orange); font-size: 10px; }.team-card h3 { margin: 0; font-size: 16px; letter-spacing: -.04em; line-height: 1.05; }.team-card p { margin: 6px 0 0; color: var(--muted); font-size: 11px; line-height: 1.35; }.connect { background: var(--lime); color: var(--panel-ink); padding: 115px 10vw 40px; }.connect h2 { font-size: clamp(65px, 10vw, 145px); margin-bottom: 45px; }.connect h2 em { color: var(--orange); }.primary-cta.light { border-color: var(--panel-ink); }.connect-meta { display: flex; justify-content: space-between; margin-top: 140px; padding-top: 20px; border-top: 1px solid rgba(22,22,22,.3); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
 @keyframes write-letter { to { opacity: 1; transform: translateY(0); } }
