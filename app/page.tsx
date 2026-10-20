@@ -19,7 +19,6 @@ const team = [
   { name: 'Kirabo Creamlyn', role: 'Head Of Marketing' },
   { name: 'Messiku Joan', role: 'Head Of Development and Brainstorming' },
   { name: 'Madolo Jeff', role: 'Founder, RychTech Bio' },
-  { name: 'Tendo Danilla', role: 'Head, Editoral Team' },
 ]
 
 import ThemeToggle from '@/components/theme-toggle'
