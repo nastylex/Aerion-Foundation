@@ -20,7 +20,6 @@ const team = [
   { name: 'Messiku Joan', role: 'Head Of Development and Brainstorming' },
   { name: 'Madolo Jeff', role: 'Founder, RychTech Bio' },
   { name: 'Tendo Danilla', role: 'Head, Editoral Team' },
-  { name: 'Moses', role: 'Head, Public Opion'},
 ]
 
 import ThemeToggle from '@/components/theme-toggle'
